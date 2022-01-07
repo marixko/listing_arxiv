@@ -24,10 +24,10 @@ for sibling in h3.find_next_siblings():
 
 list_index = []
 
-email_check = False
+send_email = False
 email_body = ""
 for key in list_key:
-    print(key)
+    print("\n\n", key)
     email_body = email_body + "-----------------------------\n" + key + "\n"
     aux = 0
     for index, title in enumerate(title_element):
@@ -41,7 +41,7 @@ for key in list_key:
                             "www.arxiv.org/abs/"+str(link_element[index].text.strip().split(':')[-1])+'\n\n'
             list_index.append(index)
             aux = aux + 1
-            email_check = True
+            send_email = True
     if aux == 0:
         print("No articles found today. \n")
         email_body = email_body + "No articles published today. \n\n"
@@ -106,4 +106,5 @@ def send_mail():
 
 
 if __name__ == "__main__":
-    send_mail()
+    if send_email:
+        send_mail()
