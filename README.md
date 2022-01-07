@@ -4,7 +4,7 @@ Print and/or send to your gmail a personalized list of today's articles publishe
 
 ## Output example
 
-![image](https://user-images.githubusercontent.com/14929100/148620568-9d2c1983-d7cf-4a3b-a61d-86faa7b9853f.png)
+![image](https://user-images.githubusercontent.com/14929100/148621148-e3df8602-8f0f-4da2-a9e5-f17244185c25.png)
 
 
 
@@ -51,7 +51,7 @@ pip install --upgrade google-api-python-client
 
 4. In order to send the list to your email, you need to create a Google API [here](https://console.cloud.google.com/apis/enableflow?apiid=gmail&project=imposing-kite-247601). Follow the instructions from [here](https://mailtrap.io/blog/send-emails-with-gmail-api/). Make sure you name the application as "Gmail API quickstart" and download the JSON file as "client_secret.json" in this directory location. 
 
-5. Run list_arxiv.py in your terminal or IDE
+5. Run listing_arxiv.py in your terminal or IDE
 
 6. Now check your email inbox!
 
