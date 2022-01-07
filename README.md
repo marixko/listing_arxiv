@@ -2,8 +2,9 @@
 
 Print and/or send to your gmail a personalized list of today's articles published in ArXiv based on your pre-defined multiple sets of keywords. The script returns: title, abstract and the ArXiv link for each article. Entries are grouped  by your pre-defined key. 
 
-## Example
+## Output example
 
+![image](https://user-images.githubusercontent.com/14929100/148620568-9d2c1983-d7cf-4a3b-a61d-86faa7b9853f.png)
 
 
 
@@ -22,7 +23,13 @@ If you are willing to help, feel free to open a Pull Request and/or contact me.
 
 ## How to run?
 
-First, make sure you have Python 3+ installed and the bs4 package. If you only want to print the list and do not want to send it to your email, ignore steps 3-4. 
+First, make sure you have Python 3+ installed and the bs4 package. If you only want to print the list and do not want to send it to your email, ignore steps 3-4 and delete/comment the last 3 rows from list_arxiv.py:
+
+```
+if __name__ == "__main__":
+    if send_email:
+        send_mail()
+```
 
 1. Clone the repository in your computer
 2. Open user_settings.py in your editor and set the ArXiv's /new URL, a dictionary of keywords (all words must be lowercase) and your gmail. Example:
