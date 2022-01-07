@@ -27,7 +27,7 @@ First, make sure you have Python 3+ installed and the bs4 package. If you only w
 
 ```
 if __name__ == "__main__":
-    if send_email:
+    if send:
         send_mail()
 ```
 
