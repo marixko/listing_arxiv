@@ -12,7 +12,7 @@ Print and/or send to your gmail a personalized list of today's articles publishe
 
 This is a very simple code that I wrote for my own personal usage. Some possible future implementations are:
 
-- Add a feature to run the code everyday automatically at a certain fixed time
+- Add information to run the code everyday automatically at a certain fixed time using crontab
 - Improve text formatting 
 - Improve accessibility and user-friendliness
 - Add other options for saving the article list
