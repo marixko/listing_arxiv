@@ -49,7 +49,7 @@ list_key = {"PHOTO-Zs":["photometric redshift", "photo-z", "photometric redshift
 pip install --upgrade google-api-python-client
 ```
 
-4. In order to send the list to your email, you need to create a Google API [here](https://console.cloud.google.com/apis/enableflow?apiid=gmail&project=imposing-kite-247601). Follow the instructions from [here](https://mailtrap.io/blog/send-emails-with-gmail-api/). Make sure you name the application as "Gmail API quickstart" and download the JSON file as "client_secret.json" in this directory location. 
+4. In order to send the list to your email, you need to create a Google API [here](https://console.cloud.google.com/apis/enableflow?apiid=gmail&project=imposing-kite-247601). Follow the instructions from [here](https://mailtrap.io/blog/send-emails-with-gmail-api/). Make sure you name the application as "Gmail API quickstart" and download the JSON file as "client_secret.json" in this directory location. Special thanks to [this StackOverflow thread](https://stackoverflow.com/questions/37201250/sending-email-via-gmail-python) contributors. 
 
 5. Run listing_arxiv.py in your terminal or IDE
 
