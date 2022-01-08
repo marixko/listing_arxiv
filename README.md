@@ -55,7 +55,9 @@ pip install --upgrade google-api-python-client
 
 6. Now check your email inbox!
 
+## Known bugs
 
+- [Not tested] This code is not ready for the case when /new presents more than 1 page of entries 
 
 
 
