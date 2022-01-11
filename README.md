@@ -12,7 +12,7 @@ Print and/or send to your gmail a personalized list of today's articles publishe
 
 This is a very simple code that I wrote for my own personal usage. Some possible future implementations are:
 
-- Add a feature to run the code everyday automatically at a certain fixed time
+- Add information to run the code everyday automatically at a certain fixed time using crontab
 - Improve text formatting 
 - Improve accessibility and user-friendliness
 - Add other options for saving the article list
@@ -49,13 +49,15 @@ list_key = {"PHOTO-Zs":["photometric redshift", "photo-z", "photometric redshift
 pip install --upgrade google-api-python-client
 ```
 
-4. In order to send the list to your email, you need to create a Google API [here](https://console.cloud.google.com/apis/enableflow?apiid=gmail&project=imposing-kite-247601). Follow the instructions from [here](https://mailtrap.io/blog/send-emails-with-gmail-api/). Make sure you name the application as "Gmail API quickstart" and download the JSON file as "client_secret.json" in this directory location. 
+4. In order to send the list to your email, you need to create a Google API [here](https://console.cloud.google.com/apis/enableflow?apiid=gmail&project=imposing-kite-247601). Follow the instructions from [here](https://mailtrap.io/blog/send-emails-with-gmail-api/). Make sure you name the application as "Gmail API quickstart" and download the JSON file as "client_secret.json" in this directory location. Special thanks to [this StackOverflow thread](https://stackoverflow.com/questions/37201250/sending-email-via-gmail-python) contributors. 
 
 5. Run listing_arxiv.py in your terminal or IDE
 
 6. Now check your email inbox!
 
+## Known bugs
 
+- [Not tested] This code is not ready for the case when /new presents more than 1 page of entries 
 
 
 
